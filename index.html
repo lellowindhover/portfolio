@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Chroma - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+          animation-delay: 4s;
+        }
+      }
+    </style>
+    <style>
+      @keyframes blob {
+        0% {
+          transform: scale(1) translate(0px, 0px);
+        }
+        33% {
+          transform: scale(1.1) translate(30px, -50px);
+        }
+        66% {
+          transform: scale(0.9) translate(-20px, 20px);
+        }
+        100% {
+          transform: scale(1) translate(0px, 0px);
+        }
+      }
+      .animate-blob {
+        animation: blob 10s infinite ease-in-out;
+      }
+
+      /* Define custom theme colors to be used by Tailwind */
+      body {
+        /* These will be mapped in tailwind.config.js if it were used, 
+           but for CDN, we define them here as CSS variables and use them in Tailwind classes.
+           Alternatively, directly use Tailwind color palette or define theme in the script tag config.
+           For simplicity, we'll assume direct Tailwind palette usage or that the custom classes below handle it.
+        */
+        --color-primary: #0F172A; /* slate-900 */
+        --color-secondary: #1E293B; /* slate-800 */
+        --color-accent: #38BDF8; /* sky-500 */
+        --color-accent-hover: #0EA5E9; /* sky-600 */
+        --color-text-main: #F1F5F9; /* slate-100 */
+        --color-text-muted: #94A3B8; /* slate-400 */
+        --color-highlight: #A5F3FC; /* cyan-200 */
+      }
+      /* Apply base background and text colors */
+      .bg-primary { background-color: var(--color-primary); }
+      .bg-secondary { background-color: var(--color-secondary); }
+      .text-accent { color: var(--color-accent); }
+      .hover\:text-accent-hover:hover { color: var(--color-accent-hover); }
+      .bg-accent { background-color: var(--color-accent); }
+      .hover\:bg-accent-hover:hover { background-color: var(--color-accent-hover); }
+      .text-text-main { color: var(--color-text-main); }
+      .text-text-muted { color: var(--color-text-muted); }
+      .text-highlight { color: var(--color-highlight); }
+      .bg-highlight { background-color: var(--color-highlight); }
+      .border-accent { border-color: var(--color-accent); }
+      .hover\:border-accent:hover { border-color: var(--color-accent); }
+      .shadow-accent\/30:hover { box-shadow: 0 0 15px 0 var(--color-accent_alpha_0_3); /* Approximating with a variable, assuming accent is hex */ }
+      .hover\:shadow-accent\/20:hover { box-shadow: 0 4px 6px -1px var(--color-accent_alpha_0_2), 0 2px 4px -1px var(--color-accent_alpha_0_2); }
+
+
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0F172A', // slate-900
+              secondary: '#1E293B', // slate-800
+              accent: '#38BDF8', // sky-500
+              'accent-hover': '#0EA5E9', // sky-600
+              'text-main': '#F1F5F9', // slate-100
+              'text-muted': '#94A3B8', // slate-400
+              highlight: '#A5F3FC', // cyan-200
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'], // Example: Using Inter font
+            },
+            animation: {
+              blob: 'blob 10s infinite ease-in-out',
+            },
+            keyframes: {
+              blob: {
+                '0%': { transform: 'scale(1) translate(0px, 0px)' },
+                '33%': { transform: 'scale(1.1) translate(30px, -50px)' },
+                '66%': { transform: 'scale(0.9) translate(-20px, 20px)' },
+                '100%': { transform: 'scale(1) translate(0px, 0px)' },
+              },
+            },
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
