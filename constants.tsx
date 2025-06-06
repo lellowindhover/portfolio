@@ -15,21 +15,21 @@ export const NAV_LINKS: NavLink[] = [
 export const PROFILE_INFO = {
   name: "Gaio Bardelle",
   title: "Data scientist and AI Trainer",
-  bio: "Data scientist focused on translating data into measurable business value. I leverage advanced analytics and machine learning to solve key challenges, from enhancing customer experience to optimizing operational efficiency. Passionate about building not just predictive models, but clear, data-backed narratives that drive strategic decision-making. Let's build solutions that deliver a tangible ROI.",
-  shortBio: "I'm Gaio, I am passionate about creating beautiful and functional web applications. With a keen eye for design and a love for clean code, I strive to build impactful digital solutions.",
-  email: "lellowindhover@gmail.com", // Fictional, can be updated if needed
-  linkedin: "https://www.linkedin.com/in/gaiobardelle", // Fictional
-  github: "https://github.com/gaiobardelle", // Fictional
+  bio: "My focus is translating data into measurable business value. I leverage advanced analytics and machine learning to solve key challenges, from enhancing customer experience to optimizing operational efficiency. Passionate about building not just predictive models, but clear, data-backed narratives that drive strategic decision-making. Let's build solutions that deliver.",
+  shortBio: "Hi, I'm Gaio. As a mentor in AI and data science, my passion lies in demystifying the complex. Just as a great app needs clean code and intuitive design, a great data model requires rigorous thinking and clear storytelling. I'm here to guide you in crafting elegant machine learning solutions and translating your results into actions that drive real-world change.",
+  email: "lellowindhover@gmail.com", 
+  linkedin: "https://www.linkedin.com/in/gaiobardelle/", 
+  github: "https://github.com/lellowindhover", 
 };
 
 export const PROJECTS_DATA: Project[] = [
   {
     id: 'p1',
-    title: 'EcoTrack - Sustainability App',
-    description: 'A mobile-first web application to help users track their carbon footprint and adopt sustainable habits. Features include progress tracking, community challenges, and educational resources.',
-    imageUrl: 'https://picsum.photos/seed/project1/600/400',
-    tags: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS', 'PWA'],
-    liveUrl: '#',
+    title: 'Oracle Vision - Computer Vision, object detection, security',
+    description: 'Oracle Vision AI upgrades your cameras, identifying objects to stop false alarms and send only the alerts that matter.',
+    imageUrl: 'https://visionplatform.ai/wp-content/uploads/2024/01/AI-security-camera.png',
+    tags: ['Yolo', 'Computer Vision', 'Security', 'AI'],
+    liveUrl: 'https://intrepidafrica-oraclevision.hf.space',
     repoUrl: '#',
   },
   {
@@ -37,16 +37,16 @@ export const PROJECTS_DATA: Project[] = [
     title: 'Nova AI - Content Generator',
     description: 'An AI-powered platform for generating creative content, including articles, social media posts, and marketing copy. Integrated with advanced language models.',
     imageUrl: 'https://picsum.photos/seed/project2/600/400',
-    tags: ['Next.js', 'Python', 'FastAPI', 'Gemini API', 'GraphQL'],
-    liveUrl: '#',
+    tags: ['python', 'transformers','llm' ],
+    liveUrl: 'https://huggingface.co/spaces/IntrepidAfrica/ai-content-generator',
   },
   {
     id: 'p3',
     title: 'Portfolio Architect',
     description: 'A dynamic portfolio website template generator for developers and designers, allowing users to easily create and customize their online presence.',
     imageUrl: 'https://picsum.photos/seed/project3/600/400',
-    tags: ['React', 'TypeScript', 'Framer Motion', 'Vercel'],
-    repoUrl: '#',
+    tags: ['themes', 'gradio', 'python'],
+    liveUrl: 'https://huggingface.co/spaces/IntrepidAfrica/arkitekt',
   },
   {
     id: 'p4',
