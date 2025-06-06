@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Project, SkillCategory, NavLink, SectionId } from './types';
-import { CodeBracketIcon, CpuChipIcon, WrenchScrewdriverIcon, PaintBrushIcon, CommandLineIcon } from './components/icons/TechStackIcons';
+import { CodeBracketIcon, CpuChipIcon, WrenchScrewdriverIcon, PaintBrushIcon, CommandLineIcon } from './components/icons/TechStackIcons'; // PaintBrushIcon might be repurposed or replaced if a better 'visualization' icon is available
 
 
 export const NAV_LINKS: NavLink[] = [
@@ -15,9 +15,9 @@ export const NAV_LINKS: NavLink[] = [
 export const PROFILE_INFO = {
   name: "Gaio Bardelle",
   title: "Data scientist and AI Trainer",
-  bio: "Crafting seamless digital experiences with cutting-edge technology. Passionate about building intuitive, performant, and visually stunning web applications. Let's build something amazing together.",
-  shortBio: "I'm Gaio, a developer passionate about creating beautiful and functional web applications. With a keen eye for design and a love for clean code, I strive to build impactful digital solutions.",
-  email: "gaio.bardelle@example.dev", // Fictional, can be updated if needed
+  bio: "Data scientist focused on translating data into measurable business value. I leverage advanced analytics and machine learning to solve key challenges, from enhancing customer experience to optimizing operational efficiency. Passionate about building not just predictive models, but clear, data-backed narratives that drive strategic decision-making. Let's build solutions that deliver a tangible ROI.",
+  shortBio: "I'm Gaio, I am passionate about creating beautiful and functional web applications. With a keen eye for design and a love for clean code, I strive to build impactful digital solutions.",
+  email: "lellowindhover@gmail.com", // Fictional, can be updated if needed
   linkedin: "https://www.linkedin.com/in/gaiobardelle", // Fictional
   github: "https://github.com/gaiobardelle", // Fictional
 };
@@ -61,53 +61,56 @@ export const PROJECTS_DATA: Project[] = [
 
 export const SKILLS_DATA: SkillCategory[] = [
   {
-    id: 'frontend',
-    name: 'Frontend Development',
+    id: 'datascience-programming',
+    name: 'Data Science & Programming',
     icon: CodeBracketIcon,
     skills: [
-      { id: 's1', name: 'React / Next.js' },
-      { id: 's2', name: 'TypeScript' },
-      { id: 's3', name: 'JavaScript (ES6+)' },
-      { id: 's4', name: 'HTML5 & CSS3' },
-      { id: 's5', name: 'Tailwind CSS' },
-      { id: 's6', name: 'Redux / Zustand' },
-      { id: 's7', name: 'GraphQL / Apollo' },
+      { id: 'ds1', name: 'Python (NumPy, Pandas, SciPy)' },
+      { id: 'ds2', name: 'SQL & NoSQL (MongoDB)' },
+      { id: 'ds3', name: 'web scraping' },
+      { id: 'ds4', name: 'Jupyter Notebooks / Google Colab' },
+      { id: 'ds5', name: 'Data Cleaning & Preprocessing' },
+      { id: 'ds6', name: 'Statistical Analysis & Modeling' },
     ],
   },
   {
-    id: 'backend',
-    name: 'Backend Development',
+    id: 'ml-ai',
+    name: 'Machine Learning & AI',
     icon: CpuChipIcon,
     skills: [
-      { id: 's8', name: 'Node.js / Express.js' },
-      { id: 's9', name: 'Python / Django / FastAPI' },
-      { id: 's10', name: 'REST APIs & gRPC' },
-      { id: 's11', name: 'PostgreSQL / MongoDB' },
-      { id: 's12', name: 'Docker & Kubernetes' },
+      { id: 'ml1', name: 'Scikit-learn' },
+      { id: 'ml2', name: 'TensorFlow / Keras' },
+      { id: 'ml3', name: 'PyTorch' },
+      { id: 'ml4', name: 'Natural Language Processing (NLTK, spaCy, Transformers)' },
+      { id: 'ml5', name: 'Computer Vision (OpenCV, Pillow, Yolo)' },
+      { id: 'ml6', name: 'Generative AI (LLMs, Gemini API)' },
+      { id: 'ml7', name: 'Recommender Systems' },
+      { id: 'ml8', name: 'AI Ethics & Responsible AI'},
     ],
   },
   {
-    id: 'uiux',
-    name: 'UI/UX Design',
-    icon: PaintBrushIcon,
+    id: 'visualization-storytelling',
+    name: 'Data Visualization & Storytelling',
+    icon: PaintBrushIcon, // Using PaintBrush for now, consider a chart-specific icon if available
     skills: [
-      { id: 's13', name: 'Figma' },
-      { id: 's14', name: 'User Research' },
-      { id: 's15', name: 'Prototyping' },
-      { id: 's16', name: 'Responsive Design' },
-      { id: 's17', name: 'Accessibility (WCAG)' },
+      { id: 'dv1', name: 'Matplotlib & Seaborn' },
+      { id: 'dv2', name: 'Plotly & Dash' },
+      { id: 'dv3', name: 'Power BI' },
+      { id: 'dv4', name: 'Geospatial Visualization (Folium)' },
+      { id: 'dv5', name: 'Communicating Insights Effectively' },
     ],
   },
   {
-    id: 'tools',
-    name: 'Tools & DevOps',
+    id: 'tools-cloud-mlops',
+    name: 'Tools, Cloud & MLOps',
     icon: WrenchScrewdriverIcon,
     skills: [
-      { id: 's18', name: 'Git & GitHub' },
-      { id: 's19', name: 'CI/CD (Jenkins, GitHub Actions)' },
-      { id: 's20', name: 'AWS / GCP / Vercel' },
-      { id: 's21', name: 'Agile Methodologies' },
-      { id: 's22', name: 'VS Code / WebStorm'},
+      { id: 'tc1', name: 'Git & GitHub / GitLab' },
+      { id: 'tc2', name: 'Docker & Containerization' },
+      { id: 'tc3', name: 'Cloud Platforms (AWS SageMaker, GCP Vertex AI, Azure ML)' },
+      { id: 'tc4', name: 'API Development (Gradio, FastAPI, Flask)' },
+      { id: 'tc5', name: 'Agile Methodologies & Jira' },
+      { id: 'tc6', name: 'Linux / Bash Scripting' },
     ],
   },
 ];
