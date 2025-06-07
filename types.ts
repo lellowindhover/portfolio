@@ -7,6 +7,7 @@ export interface Project {
   tags: string[];
   liveUrl?: string;
   repoUrl?: string;
+  extraImageUrls?: string[]; // Added for image gallery
 }
 
 export interface Skill {

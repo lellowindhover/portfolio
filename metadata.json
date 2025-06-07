@@ -1,6 +1,6 @@
-
 {
   "name": "Gaio Bardelle - Portfolio",
   "description": "A personal portfolio website for Gaio Bardelle, a Data scientist and AI Trainer, showcasing projects, skills, and contact information.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "prompt": ""
 }

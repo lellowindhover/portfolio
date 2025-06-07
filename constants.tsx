@@ -31,6 +31,11 @@ export const PROJECTS_DATA: Project[] = [
     tags: ['Yolo', 'Computer Vision', 'Security', 'AI'],
     liveUrl: 'https://intrepidafrica-oraclevision.hf.space',
     repoUrl: '#',
+    extraImageUrls: [
+      'https://picsum.photos/seed/p1extra1/800/600',
+      'https://picsum.photos/seed/p1extra2/800/600',
+      'https://picsum.photos/seed/p1extra3/800/600',
+    ],
   },
   {
     id: 'p2',
@@ -39,6 +44,10 @@ export const PROJECTS_DATA: Project[] = [
     imageUrl: 'https://picsum.photos/seed/project2/600/400',
     tags: ['python', 'transformers','llm' ],
     liveUrl: 'https://huggingface.co/spaces/IntrepidAfrica/ai-content-generator',
+    extraImageUrls: [
+      'https://picsum.photos/seed/p2extra1/800/600',
+      'https://picsum.photos/seed/p2extra2/800/600',
+    ],
   },
   {
     id: 'p3',
@@ -47,15 +56,22 @@ export const PROJECTS_DATA: Project[] = [
     imageUrl: 'https://picsum.photos/seed/project3/600/400',
     tags: ['themes', 'gradio', 'python'],
     liveUrl: 'https://huggingface.co/spaces/IntrepidAfrica/arkitekt',
+    // No extra images for this one, to demonstrate conditional rendering
   },
   {
     id: 'p4',
-    title: 'Interactive Data Visualizer',
-    description: 'A tool for creating stunning interactive charts and graphs from various data sources. Built with D3.js and React for a highly customizable experience.',
+    title: 'Automated ML and Prediction ',
+    description: 'Use a Trained Model for Predictions.',
     imageUrl: 'https://picsum.photos/seed/project4/600/400',
-    tags: ['React', 'D3.js', 'TypeScript', 'Redux'],
-    liveUrl: '#',
+    tags: ['Auto ML', 'Pycaret', 'Python', 'Gradio'],
+    liveUrl: 'https://huggingface.co/spaces/IntrepidAfrica/AutoML',
     repoUrl: '#',
+    extraImageUrls: [
+      'https://picsum.photos/seed/p4extra1/800/600',
+      'https://picsum.photos/seed/p4extra2/800/600',
+      'https://picsum.photos/seed/p4extra3/800/600',
+      'https://picsum.photos/seed/p4extra4/800/600',
+    ],
   },
 ];
 
